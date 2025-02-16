@@ -6,7 +6,7 @@ import Genere from "./Cards/Genere";
 import { Menu, X } from "lucide-react"; // Icons for mobile menu
 
 const Navbar = () => {
-  const { searchInput, setSearchInput } = useContext(SearchContext);
+  const { searchInput, setsearchInput } = useContext(SearchContext);
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu
 
@@ -28,39 +28,30 @@ const Navbar = () => {
 
       {/* Search Bar */}
       <div className="flex-1 max-w-lg mx-auto mt-4 md:mt-0">
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            navigate(`/search/${searchInput}`);
-          }}
-          className="relative w-full"
-        >
-          <input
-            onChange={(e) => {
-              setSearchInput(e.target.value);
-              navigate(e.target.value ? `/search/${e.target.value}` : "/");
+      <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              navigate(`/search/${searchInput}`);
             }}
-            value={searchInput}
-            type="text"
-            className="w-full bg-gray-800 text-white rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-white"
-            placeholder="Search movies, TV shows, Anime..."
-          />
-          <div className="absolute left-3 top-2.5">
-            <svg
-              className="h-5 w-5 text-gray-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          >
+            <div className="relative">
+              <input
+                type="text"
+                value={searchInput}
+                onChange={(e) => {
+                  setsearchInput(e.target.value);
+                  navigate(e.target.value === "" ? "/" : `/search/${e.target.value}`);
+                }}
+                className="w-full bg-gray-800 text-white rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-white"
+                placeholder="Search movies, TV shows, Anime..."
               />
-            </svg>
-          </div>
-        </form>
+              <div className="absolute left-3 top-2.5">
+                <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+          </form>
       </div>
 
       {/* Navigation Links & Sign In */}
