@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../ui/button'
-import Featured from '../featured'
+import Featured from '../Featured'
 
 const Home = () => {
   return (
