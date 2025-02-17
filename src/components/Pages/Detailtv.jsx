@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import useTvDetail from "@/hooks/usedetailtv";
+import useTvDetail from "@/hooks/useDetailtv";
 import Tvdetailcard from "../Cards/Tvdetailcard";
 
 const Detailtv = () => {

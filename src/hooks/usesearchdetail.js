@@ -1,4 +1,4 @@
-import { SearchContext } from "@/contexts/searchcontext";
+import { SearchContext } from "@/contexts/SearchContext";
 import apiClient from "@/services/api-client";
 import { useEffect, useContext } from "react";
 

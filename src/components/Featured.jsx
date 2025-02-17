@@ -1,5 +1,5 @@
 import React from 'react'
-import Trendingmovies from './Cards/trendingmovies'
+import Trendingmovies from './Cards/Trendingmovies'
 import Trendingtvshows from './Cards/Trendingtvshows'
 
 const Featured = () => {

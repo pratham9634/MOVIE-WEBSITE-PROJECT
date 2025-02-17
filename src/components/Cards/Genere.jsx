@@ -8,7 +8,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { GenresContext } from "../../contexts/generescontext"
+import { GenresContext } from "../../contexts/GeneresContext"
 import { useNavigate } from 'react-router-dom';
 
 const genreslist = {

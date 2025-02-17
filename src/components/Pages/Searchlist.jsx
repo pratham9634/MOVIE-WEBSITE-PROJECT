@@ -1,5 +1,5 @@
-import { SearchContext } from '@/contexts/searchcontext';
-import useSearchDetail from '@/hooks/usesearchdetail';
+import { SearchContext } from '@/contexts/SearchContext';
+import useSearchDetail from '@/hooks/useSearchdetail';
 import React, { useContext } from 'react';
 import Moviecard from '../Cards/Moviecard';
 import TvshowCard from '../Cards/Tvshowcard';

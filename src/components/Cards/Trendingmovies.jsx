@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from './Slider';
-import useTrendingMovieList from '@/hooks/usetrendingmovielist';
+import useTrendingMovieList from '@/hooks/useTrendingmovielist';
 
 const Trendingmovies = () => {
     const { trendingList } = useTrendingMovieList();

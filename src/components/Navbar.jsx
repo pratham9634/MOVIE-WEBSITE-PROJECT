@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
-import { SearchContext } from "@/contexts/searchcontext";
+import { SearchContext } from "@/contexts/SearchContext";
 import Genere from "./Cards/Genere";
 import { Menu, X } from "lucide-react"; // Icons for mobile menu
 

@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import 'swiper/css/effect-coverflow';
 import "swiper/css/pagination";
-import TrendingMovieCard from "./Trendingmoviecard";
+import TrendingMovieCard from "./TrendingMovieCard";
 
 const Slider = ({ data }) => {
     return (

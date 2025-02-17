@@ -1,7 +1,7 @@
-import useMovieList from "../../hooks/usemovie.js";
+import useMovieList from "../../hooks/useMovie.js";
 import React, { useContext } from "react";
 import Moviecard from "../Cards/Moviecard.jsx";
-import { GenresContext } from "@/contexts/generescontext.jsx";
+import { GenresContext } from "@/contexts/GeneresContext.jsx";
 
 const Movielist = () => {
   const { genres } = useContext(GenresContext);

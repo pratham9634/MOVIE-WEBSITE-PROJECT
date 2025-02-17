@@ -1,5 +1,5 @@
 import React from 'react'
-import useTvShowList from '../../hooks/usetvshow.js'
+import useTvShowList from '../../hooks/useTvshow.js'
 import Tvshowcard from '../Cards/Tvshowcard.jsx'
 
 const Tvshowlist = () => {

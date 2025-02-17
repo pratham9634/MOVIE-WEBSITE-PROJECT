@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import AllRoutes from './components/Allroutes'
-import { GenresProvider } from './contexts/generescontext'
+import { GenresProvider } from './contexts/GeneresContext'
 import Footer from './components/Footer'
 
 const App = () => {

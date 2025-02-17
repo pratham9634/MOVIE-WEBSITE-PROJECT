@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Detailcard from "../Cards/Detailcard";
-import useMovieDetail from "@/hooks/usedetail";
+import useMovieDetail from "@/hooks/useDetail";
 
 const Detail = () => {
     const { id } = useParams();
