@@ -9,7 +9,7 @@ const TvShowCard = ({ TvShowData }) => {
   if (!TvShowData ) return null;
   const navigate = useNavigate();
   return (
-    <Card className="border-[1px] rounded-3xl bg-gray-800 w-72 h-[485px] m-4"> 
+    <Card className="border-[1.5px] border-yellow-200 rounded-3xl bg-gray-800 w-72 h-[500px] m-4"> 
       <CardContent>
         <img 
          onClick={() => {

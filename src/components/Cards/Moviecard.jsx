@@ -9,7 +9,7 @@ const MovieCard = ({ MovieData }) => {
   if (!MovieData) return null;
   const navigate = useNavigate();
   return (
-    <Card className="border-[1px] rounded-3xl bg-gray-800 w-72 m-4">
+    <Card className="border-[1.5px] border-yellow-200 rounded-3xl hover: bg-gray-800 w-72 h-[500px] m-4 hover:shadow-lg hover:shadow-amber-300">
       <CardContent>
         <img 
           onClick={() => {

@@ -13,7 +13,7 @@ const Slider = ({ data }) => {
         <Swiper
         loop={true}
         speed={800}
-        slidesPerView={5}
+        slidesPerView={4}
         centeredSlides={true}
         effect={'coverflow'}
         coverflowEffect={{
