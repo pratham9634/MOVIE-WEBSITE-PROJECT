@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import 'swiper/css/effect-coverflow';
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import TrendingMovieCard from "./TrendingMovieCard";
+
 
 const Slider = ({ data }) => {
     return (
@@ -34,7 +35,7 @@ const Slider = ({ data }) => {
       >
             {data?.map((movie) => (
                 <SwiperSlide key={movie.id}>
-                    <TrendingMovieCard moviedata={movie} />
+                    <TrendingMovieCard movieData={movie} />
                 </SwiperSlide>
             ))}
         </Swiper>

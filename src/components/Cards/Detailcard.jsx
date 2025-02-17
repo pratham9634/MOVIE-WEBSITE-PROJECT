@@ -3,7 +3,7 @@ import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
 
-const Detailcard = ({ data }) => {
+const DetailCard = ({ data }) => {
   const navigate = useNavigate();
 
   return (
@@ -120,4 +120,4 @@ const Detailcard = ({ data }) => {
   );
 };
 
-export default Detailcard;
+export default DetailCard;

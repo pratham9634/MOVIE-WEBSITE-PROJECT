@@ -23,5 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore API client file
-src/services/api-client.js

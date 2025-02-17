@@ -8,10 +8,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { GenresContext } from "../../contexts/GeneresContext"
-import { useNavigate } from 'react-router-dom';
 
-const genreslist = {
+import { useNavigate } from 'react-router-dom';
+import { GenresContext } from '@/contexts/GenreContext';
+
+const GenresList = {
     "genres": [
       {
         "id": 28,
@@ -92,8 +93,8 @@ const genreslist = {
     ]
   };
 
-const Genere = () => {
-  const {setgenres} = useContext(GenresContext);
+const Genre = () => {
+  const {setGenres} = useContext(GenresContext);
   const [selectedGenre, setSelectedGenre] = useState();
 
   const navigate = useNavigate();
@@ -101,15 +102,15 @@ const Genere = () => {
     <div className=" w-44 ">
       <DropdownMenu >
         <DropdownMenuTrigger asChild>
-          <div className="bg-black hover:bg-gray-900 py-2 px-4 text-center rounded-full">{genreslist.genres.find(genre => genre.id === selectedGenre)?.name||"Genere"}</div>
+          <div className="bg-black hover:bg-gray-900 py-2 px-4 text-center rounded-full">{GenresList.genres.find(genre => genre.id === selectedGenre)?.name||"Genre"}</div>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-44 items-center justify-center bg-gray-700">
           <DropdownMenuRadioGroup value={selectedGenre} onValueChange={(genre) => {
             setSelectedGenre(genre);
-            setgenres(genre);
+            setGenres(genre);
             navigate("/movies");
           }}>
-            {genreslist.genres.map((genre) => (
+            {GenresList.genres.map((genre) => (
               <DropdownMenuRadioItem key={genre.id} value={genre.id} className="text-gray-200 py-2 px-6 ">{genre.name}</DropdownMenuRadioItem>
             ))}
           </DropdownMenuRadioGroup>
@@ -119,4 +120,4 @@ const Genere = () => {
   )
 }
 
-export default Genere
+export default Genre

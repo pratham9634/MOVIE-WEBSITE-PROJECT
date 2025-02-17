@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
-import { SearchContext } from "@/contexts/Searchontext";
-import Genere from "./Cards/Genere";
 import { Menu, X } from "lucide-react"; // Icons for mobile menu
+import { SearchContext } from "@/contexts/SearchContext";
+import Genre from "./Cards/Genre";
 
 const Navbar = () => {
-  const { searchInput, setsearchInput } = useContext(SearchContext);
+  const { searchInput, setSearchInput } = useContext(SearchContext);
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu
 
@@ -39,7 +39,7 @@ const Navbar = () => {
                 type="text"
                 value={searchInput}
                 onChange={(e) => {
-                  setsearchInput(e.target.value);
+                  setSearchInput(e.target.value);
                   navigate(e.target.value === "" ? "/" : `/search/${e.target.value}`);
                 }}
                 className="w-full bg-gray-800 text-white rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-white"
@@ -61,7 +61,7 @@ const Navbar = () => {
         } flex-col items-center w-full mt-5 md:mt-0 md:flex md:flex-row md:w-auto md:space-x-6`}
       >
         <div className="text-gray-300 hover:text-white cursor-pointer text-lg">
-          <Genere />
+          <Genre/>
         </div>
 
         <nav className="flex flex-col md:flex-row text-center md:space-x-6">

@@ -1,9 +1,10 @@
-import { SearchContext } from "@/contexts/Searchontext";
+import { SearchContext } from "@/contexts/SearchContext";
 import apiClient from "@/services/api-client";
+
 import { useEffect, useContext } from "react";
 
 const useSearchDetail = (Input) => {
-    const { setsearchdata } = useContext(SearchContext);
+    const { setSearchData } = useContext(SearchContext);
 
     const fetchData = async () => {
         console.log("Fetching search data for input:", Input);
@@ -14,7 +15,7 @@ const useSearchDetail = (Input) => {
                 },
             });
             console.log("Search data fetched successfully:", res.data.results);
-            setsearchdata(res.data.results);
+            setSearchData(res.data.results);
         } catch (error) {
             console.error("Error fetching search data:", error);
         }
@@ -25,4 +26,4 @@ const useSearchDetail = (Input) => {
     }, [Input]);
 };
 
-export default useSearchDetail
+export default useSearchDetail;

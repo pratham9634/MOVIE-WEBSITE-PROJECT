@@ -1,30 +1,31 @@
 import { Route, Routes } from "react-router"
-import Home from "./Pages/Home";
-import Movielist from "./Pages/Movielist";
-import Notfound from "./Pages/Notfound";
-import Tvshowlist from "./Pages/Tvshowlist";
-import Anime from "./Pages/Anime";
+import MovieList from "./Pages/MovieList";
 import Detail from "./Pages/Detail";
-import Detailtv from "./Pages/Detailtv";
-import Searchlist from "./Pages/Searchlist";
+import DetailTv from "./Pages/DetailTv";
+import Home from "./Pages/Home";
+import TvShowList from "./Pages/TvShowList";
+import NotFound from "./Pages/NotFound";
+import Anime from "./Pages/Anime";
+import SearchList from "./Pages/SearchList";
 import Player from "./Player";
 
 
-const Allroutes = () => {
+
+const AllRoutes = () => {
   return (
     <Routes>
-        <Route path="/movies" element={<Movielist/>}/>
+        <Route path="/movies" element={<MovieList/>}/>
         <Route path="/movie/:id" element={<Detail />}/>
-        <Route path="/tv/:id" element={<Detailtv />}/>
+        <Route path="/tv/:id" element={<DetailTv />}/>
         <Route path="/" element={<Home/>}/>
-        <Route path="/tv-shows" element={<Tvshowlist/>}/>
-        <Route path="*" element={<Notfound/>}/>
+        <Route path="/tv-shows" element={<TvShowList/>}/>
+        <Route path="*" element={<NotFound/>}/>
         <Route path="/anime" element={<Anime/>}/>
-        <Route path="/search/:Input" element={<Searchlist/>}/>
+        <Route path="/search/:Input" element={<SearchList/>}/>
         <Route path="/player/:id" element={<Player/>}/>
 
     </Routes>
   );
 };
 
-export default Allroutes;
+export default AllRoutes;

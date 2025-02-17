@@ -1,12 +1,13 @@
 import React from 'react'
-import Trendingmovies from './Cards/Trendingmovies'
-import Trendingtvshows from './Cards/Trendingtvshows'
+import TrendingMovies from './Cards/TrendingMovies'
+import TrendingTvShows from './Cards/TrendingTvShows'
+
 
 const Featured = () => {
   return (
     <div className='bg-black'>
-        <Trendingmovies/>
-        <Trendingtvshows/>
+        <TrendingMovies/>
+        <TrendingTvShows/>
       
     </div>
   )

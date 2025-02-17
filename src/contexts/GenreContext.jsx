@@ -3,10 +3,10 @@ import { createContext, useState } from 'react';
 const GenresContext = createContext();
 
 const GenresProvider = ({ children }) => {
-  const [genres, setgenres] = useState(null);
+  const [genres, setGenres] = useState(null);
 
   return (
-    <GenresContext.Provider value={{ genres, setgenres}}>
+    <GenresContext.Provider value={{ genres, setGenres}}>
       {children}
     </GenresContext.Provider>
   );
