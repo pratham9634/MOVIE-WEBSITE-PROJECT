@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router"
 import Home from "./Pages/Home";
 import Movielist from "./Pages/Movielist";
 import Notfound from "./Pages/Notfound";
-import Tvshowlist from "./Pages/tvshowlist";
+import Tvshowlist from "./Pages/Tvshowlist";
 import Anime from "./Pages/Anime";
 import Detail from "./Pages/Detail";
 import Detailtv from "./Pages/Detailtv";
