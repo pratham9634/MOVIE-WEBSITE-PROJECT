@@ -1,4 +1,4 @@
-import { SearchContext } from '@/contexts/SearchContext';
+import { SearchContext } from '@/contexts/Searchontext';
 import useSearchDetail from '@/hooks/useSearchdetail';
 import React, { useContext } from 'react';
 import Moviecard from '../Cards/Moviecard';
