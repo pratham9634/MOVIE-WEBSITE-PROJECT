@@ -4,7 +4,7 @@ const SearchContext = createContext();
 
 const SearchProvider = ({ children }) => {
   const [searchInput, setSearchInput] = useState("");
-  const [searchData, setSearchData] = useState();
+  const [searchData, setSearchData] = useState([]);
 
   const value = {searchInput,setSearchInput,searchData,setSearchData}; 
   return (
