@@ -2,7 +2,7 @@ import { SearchContext } from '@/contexts/searchcontext';
 import useSearchDetail from '@/hooks/usesearchdetail';
 import React, { useContext } from 'react';
 import Moviecard from '../Cards/Moviecard';
-import TvshowCard from '../Cards/TvshowCard';
+import TvshowCard from '../Cards/Tvshowcard';
 
 const Searchlist = () => {
     const {searchInput, searchdata} = useContext(SearchContext);
