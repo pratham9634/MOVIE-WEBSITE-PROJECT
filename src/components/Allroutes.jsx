@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router"
 import Home from "./Pages/Home";
-import Movielist from "./Pages/movielist";
+import Movielist from "./Pages/Movielist";
 import Notfound from "./Pages/Notfound";
 import Tvshowlist from "./Pages/tvshowlist";
 import Anime from "./Pages/Anime";
