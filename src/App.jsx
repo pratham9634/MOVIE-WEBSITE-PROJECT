@@ -10,7 +10,7 @@ const App = () => {
     <>
     <SearchProvider>
     <GenresProvider>
-    <div className="flex flex-col">
+    <div className="flex flex-col w-auto overflow-hidden">
     <Navbar/>
     <AllRoutes/> 
     <Footer/>

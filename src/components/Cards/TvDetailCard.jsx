@@ -7,13 +7,13 @@ const TvDetailCard = ({ Data }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="h-auto bg-gradient-to-br from-black to-gray-900 p-6 md:p-10">
-      <Card className="border border-gray-700 shadow-lg shadow-gray-600 md:h-screen sm:h-screen ">
+    <div className="h-full bg-gradient-to-br from-black to-gray-900 p-6 md:p-10">
+      <Card className="border border-gray-700 shadow-lg shadow-gray-600 w-full h-screen md:h-screen sm:h-screen ">
         {/* TV Show Poster and Background */}
-        <div className="relative h-[400px] md:h-[520px] bg-cover bg-center ">
+        <div className="relative min-h-screen bg-cover bg-center">
           <img
             src={`https://image.tmdb.org/t/p/w500${Data.backdrop_path}`}
-            className="absolute top-0 left-0 w-full object-cover md:h-screen sm:h-screen"
+            className="absolute top-0 left-0 w-full h-full object-cover "
             alt="TV Show Backdrop"
           />
           <div className="absolute top-0 left-0 w-full h-full sm:h-screen bg-black bg-opacity-50 backdrop-blur-sm"></div>
@@ -32,8 +32,8 @@ const TvDetailCard = ({ Data }) => {
             </Card>
 
             {/* Right - Details */}
-            <div className="right flex flex-col w-auto gap-4 p-16 mb-7 text-white font-semibold text-3xl sm:text-lg">
-              <h1 className="text-amber-400 font-extrabold text-2xl">TV SHOW INFO</h1>
+            <div  className="flex flex-col items-center lg:items-start text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl gap-3 md:gap-4 p-4 md:p-8">
+            <h1 className="text-amber-400 font-extrabold text-lg sm:text-xl md:text-2xl">TV SHOW  INFO</h1>
               <p><span className="font-bold">Title:</span> {Data.name}</p>
               <p><span className="font-bold">Language:</span> Hindi DD5.1 + English</p>
               <p><span className="font-bold">Subtitle:</span> YES (English)</p>
@@ -75,9 +75,9 @@ const TvDetailCard = ({ Data }) => {
       <div className="text-white text-center p-6">
         <h2 className="text-3xl font-bold text-amber-400">Screenshots</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <img src="/src/images/soon.jpg" alt="Coming Soon" className="rounded-xl" />
-          <img src="/src/images/soon.jpg" alt="Coming Soon" className="rounded-xl" />
-          <img src="/src/images/soon.jpg" alt="Coming Soon" className="rounded-xl" />
+          <img src="https://th.bing.com/th/id/OIP.PzWFZD-2Vld6e6YSqhz_FAHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Coming Soon" className="rounded-xl" />
+          <img src="https://th.bing.com/th/id/OIP.PzWFZD-2Vld6e6YSqhz_FAHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Coming Soon" className="rounded-xl" />
+          <img src="https://th.bing.com/th/id/OIP.PzWFZD-2Vld6e6YSqhz_FAHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Coming Soon" className="rounded-xl" />
         </div>
       </div>
 

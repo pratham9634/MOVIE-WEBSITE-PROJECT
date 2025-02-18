@@ -16,7 +16,7 @@ const Navbar = () => {
       {/* Logo & Menu Button (For Mobile) */}
       <div className="flex justify-between items-center w-full md:w-auto">
         <NavLink to="/">
-          <img className="h-16 w-auto" src="/src/images/logo1.png" alt="Logo" />
+          <img className="h-16 w-auto" src="https://th.bing.com/th/id/R.7c2ebc84349f1979afd82b1b963c9a31?rik=4kWOWpSbxo5K7g&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2018%2f06%2fCinema-Transparent.png&ehk=3AW1I48Ut1Vn%2fxcHeqsFYX5xg8M0sJ7laBhqZcdPFN8%3d&risl=&pid=ImgRaw&r=0" alt="Logo" />
         </NavLink>
         <button
           className="md:hidden text-white"
