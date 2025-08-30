@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { GenresProvider } from './contexts/GenreContext'
 import Navbar from './components/Navbar'
 import AllRoutes from './components/AllRoutes'

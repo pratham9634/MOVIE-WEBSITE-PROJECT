@@ -1,9 +1,8 @@
-import React from 'react'
 import { useParams } from 'react-router-dom'
 
 const Player = () => {
     const {id} = useParams();
-    const url = `https://vidsrc.dev/embed/movie/${id}`;
+    const url = `https://vidsrc.to/embed/movie/${id}`;
   return (
     <div>
       <iframe

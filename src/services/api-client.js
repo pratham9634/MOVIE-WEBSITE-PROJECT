@@ -2,7 +2,10 @@ import axios from "axios";
 
 export default axios.create({
     baseURL: "https://api.themoviedb.org/3",
+    headers: {
+    Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYjA2NWZjZjQxMjQwN2Y1YzE2NGJlNTNkOGIzNGNkNCIsIm5iZiI6MTczOTAyMjEyOC45NzksInN1YiI6IjY3YTc1ZjMwMzEwMDFiZWMxM2M4YjQyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.JtSIQscXNXiWCEGqOS3kMdHDD7CsdGuedKgc9UPJI6E`,
+  },
     params: {
-        api_key: "62ec0f61c4faadb764c1a3c5e007a02c",
+        api_key: import.meta.env.APP_API_KEY,
     }
 });
